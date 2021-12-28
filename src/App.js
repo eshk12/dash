@@ -1,6 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import Container from 'react-bootstrap/Container';
 import {userRoutes} from "./routes/route";
 import './component/style/App.css';
 import React from "react";
@@ -16,7 +14,6 @@ import {NotFound} from "./pages/NonAuthPages/NotFound";
 function App() {
     return (
         <div className="App">
-            <Container fluid>
                 <Router>
                     <Routes>
                         <Route path='*' element={<NotFound/>}/>
@@ -33,7 +30,6 @@ function App() {
                         }
                     </Routes>
                 </Router>
-            </Container>
         </div>
     );
 }

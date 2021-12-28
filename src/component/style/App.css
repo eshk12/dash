@@ -1,0 +1,14 @@
+*{
+    direction:rtl;
+    text-align:right;
+    font-family: arial;
+}
+body{
+    background-color:#ecf0f5;
+}
+.text_left{
+    text-align:left;
+}
+.text_right{
+    text-align:right;
+}

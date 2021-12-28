@@ -1,4 +1,4 @@
-import "../../component/style/nonAuth.css";
+import styles from "../../component/style/nonAuth.module.css";
 
 import React from "react";
 import Container from 'react-bootstrap/Container';
@@ -9,10 +9,10 @@ import Button from 'react-bootstrap/Button';
 export const LoginPage = () => {
   return (
       <React.Fragment>
-        <Container id="LoginPage">
+        <Container className={styles.LoginPage}>
           <Row>
             <Col md={{span: 4, offset: 4}}>
-                <div class="loginBox">
+                <div className={styles.loginBox}>
                     <Form>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
